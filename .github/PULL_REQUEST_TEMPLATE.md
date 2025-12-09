@@ -1,3 +1,6 @@
+Hackpad submissions should no longer be done through PRs - instead, please submit to the current active program! For reference, this is what the old message used to look like:
+
+```
 Ready to submit your project? Nice job! Hopefully you've read the [submission guidelines](https://hackpad.hackclub.com/submitting). **If not, make sure to read them first.**
 
 Check off the following to let the reviewers know you've done everything:
@@ -15,3 +18,4 @@ Check off the following to let the reviewers know you've done everything:
 If you're unsure about the format, make sure to check out this [example]([insertexample](https://github.com/hackclub/hackpad/tree/main/hackpads/Duccs%20Fidget%20Toy)) and follow the format there.
 
 If this PR isn't a submission, that's okay too! Please remove the above boxes and explain what the pull request is for! If there's anything about this PR template that seems confusing, send a message in #hackpad in slack!
+```
