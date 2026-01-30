@@ -24,10 +24,17 @@ The repo has gotten really big over the past year as old submissions used to go 
 git clone --depth 1 https://github.com/hackclub/hackpad
 ```
 
-
 ## Anything else?
 
 Ask in #hackpad! If you're not a teen but are interested in collaborating with us, you can email me at alexren[at]hackclub.com!
 
+## Acknowledgements
+Hackpad has had *tons* of help since its inception in October 2024. Here are some of the people who have been pivotal in making it actually work. In no particular order:
 
+- [@Dongathan-Jong](https://github.com/Dongathan-Jong) - carried us during the trenches of v1, ran v2, and also helped a ton with v3
+- [@m0hid](https://github.com/m0hid) - been in the trenches since v1! I still remember sitting in huddles from SF lol
+- [@cheyao](https://github.com/cheyao) - rewrote docs for v2 and has been helping out since its inception!
+- [@Taran-the-Idiot](https://github.com/Taran-the-Idiot) - brought hackboard back from the dead!
+
+(if you're not here and you think you should be - let me know! I couldn't find some github usernames)
 
