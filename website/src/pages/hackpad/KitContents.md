@@ -1,16 +1,19 @@
-# List of approved parts
+# Kit Contents!
 
-Here is the list of parts that come with the kit! Feel free to use anything in it
+Here are all the parts that come with the kit! It should be enough for any macropad you may want to make.
 
-## The list:
+You're allowed to use other parts, but you'll have to source them yourself on your on money
 
-- Seeed XIAO RP2040 - since you're soldering, you can mount it SMD style! Please note it is significantly harder than doing it through-hole, so if it's your first time soldering I would avoid it.
-- Through-hole 1N4148 Diodes (Max 20x)
-- MX-Style switches (Max 16x)
-- EC11 Rotary encoders (Max 2x)
-- 0.91 inch OLED displays (Max 1x) (make sure the pin order is GND-VCC-SCL-SDA, otherwise it WILL NOT WORK)
-- Blank DSA keycaps (White)
-- SK6812 MINI-E LEDs (Max 16x)
-- M3x16mm screws
-- [M3x5mx4mm heatset inserts](https://www.aliexpress.us/item/2255800046543591.html)
-- 3D PRINTED CASE ONLY. NO ACRYLIC.
+_Feel like something should be included? Let me know and it might just make it into the next edition._
+
+![picture of all the kit components](docs/v3/kit-spread.png)
+
+- 1 unsoldered [Seeed XIAO RP2040](https://wiki.seeedstudio.com/XIAO-RP2040/)
+- 20x through-hole 1N4148 Diodes
+- 16x MX-Style switches
+- 2x EC11 Rotary encoders
+- 1x 0.91 inch OLED display (the pin order is GND-VCC-SCL-SDA, MAKE SURE YOUR PCB MATCHES)
+- 16x white blank DSA keycaps
+- 16x SK6812 MINI-E LEDs
+- 4x M3x16mm screws
+- 4x [M3x5mx4mm heatset inserts](https://www.aliexpress.us/item/2255800046543591.html)

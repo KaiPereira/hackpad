@@ -23,7 +23,7 @@ export default function App() {
                             </h1>
                         </div>
                         <div className="border-4 border-dashed border-black bg-green-200 px-2 rounded-sm absolute -rotate-12 text-4xl ml-56 mt-16">
-                            v3!
+                            v4!
                         </div>
                     </div>
                     <img
@@ -192,11 +192,26 @@ export default function App() {
                         </s>
                     </div>
                     <div>
-                        <h2 className="text-xl py-3">What's new in V3?</h2>
+                        <s>
+                            <h2 className="text-xl py-3">What's new in V3?</h2>
+                            <p>
+                                Hackpad is now a guided part of{" "}
+                                <a href="https://highway.hackclub.com">
+                                    Highway
+                                </a>
+                                ! It's a similar program where you can make{" "}
+                                <i>any hardware project</i> instead!
+                            </p>
+                        </s>
+                    </div>
+                    <div>
+                        <h2 className="text-xl py-3">What's new in V4?</h2>
                         <p>
                             Hackpad is now a guided part of{" "}
-                            <a href="https://highway.hackclub.com">Highway</a>!
-                            It's a similar program where you can make{" "}
+                            <a href="https://blueprint.hackclub.com">
+                                Blueprint
+                            </a>
+                            ! It's a similar program where you can make{" "}
                             <i>any hardware project</i> instead!
                         </p>
                     </div>
