@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 
-import SimpleTutorial from "./pages/hackpad/SimpleTutorial.mdx";
+import SimpleTutorial from "./pages/hackpad/SimpleTutorial.md";
 import Submission from "./pages/hackpad/Submission.mdx";
 import KitContents from "./pages/hackpad/KitContents.md";
 import Faq from "./pages/hackpad/Faq.mdx";
@@ -11,7 +11,7 @@ import Resources from "./pages/hackpad/Resources.mdx";
 import GetKeycap from "./pages/hackpad/deprecated/GetKeycap.mdx";
 import CardGrant from "./pages/hackpad/CardGrant.mdx";
 import Guide from "./pages/hackpad/guide_staging.md";
-import OtherParts from "./pages/hackpad/OtherParts.md";
+import OtherParts from "./pages/hackpad/OtherParts.mdx";
 
 import Overview from "./pages/hackboard/Overview.mdx";
 import Faq2 from "./pages/hackboard/Faq2.mdx";

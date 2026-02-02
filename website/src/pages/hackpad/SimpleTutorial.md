@@ -4,7 +4,7 @@ Hey there! Want to make your own macropad but have no clue where to start? Right
 
 In this guide, we'll go over how to make a simple 3-key macropad as an example, step-by step.
 
-*For a full submission, you will have to edit it to be your own (add an extra key? a knob? up to you!)*
+_For a full submission, you will have to edit it to be your own (add extra keys? a knob? up to you!)_
 
 This process is going to be broken into 3 parts, each with its own sub-parts:
 
@@ -16,14 +16,13 @@ This process is going to be broken into 3 parts, each with its own sub-parts:
     1. Creating the bottom
     2. Creating the plate
     3. Adding mounting holes
-3. Firmware
-    1. Picking a firmware
+3. Firmware Setup
 
 If anything is unclear, 9 times out of 10 you can usually google it; that being said, PLEASE send what you're stuck on in #hackpad!
 
 There's also [this](/resources) giant wall of resources to reference!
 
-**I also go through all these steps in [this YouTube video](https://youtu.be/IsD3lDX75ZI), so you can follow along if you're stuck!**
+<!-- **I also go through all these steps in [this YouTube video](https://youtu.be/IsD3lDX75ZI), so you can follow along if you're stuck!** -->
 
 First, we're going to start with...
 
@@ -32,9 +31,6 @@ First, we're going to start with...
 For this guide we're going to be using [KiCad](https://www.kicad.org/), which is an open source PCB designer tool.
 
 To start, we're going to have to import the necessary footprints. For this guide, I made a special care package
-
--   [XIAO RP2040 footprint](https://github.com/Seeed-Studio/OPL_Kicad_Library) (use the SAMD21 footprint for now, it's identical in pinout)
-    Once you have the footprints, you can google to figure out how to install them!
 
 ### Drawing the schematic
 
@@ -45,19 +41,19 @@ First, open KiCad up KiCad and create a new project, then click on the "Schemati
 
 This should open up the schematic editor. Once you're in, press the A key on your keyboard. This should open up a menu where you can add add components. Search for the following and add them:
 
--   Seeed XIAO SAMD21 (Seeed does not have an official RP2040 footprint, so we're using the SAMD21 footprint as a placeholder instead)
--   SW_Push (this will be our switch! copy this 3 times)
+- Seeed XIAO SAMD21 (Seeed does not have an official RP2040 footprint, so we're using the SAMD21 footprint as a placeholder instead)
+- SW_Push (this will be our switch! copy this 3 times)
 
 After, your schematic should look something like this:
-<img src="/docs/v1/schematiclayoutnowire.png" className="max-w-96 justify-center" />
+<img src="/docs/v1/schematiclayoutnowire.png" style={{ maxHeight: '300px'}} />
 
 Next, press the W key on your keyboard. This should make a green wire start to appear. Connect your components like so:
-<img src="/docs/v1/routedschematic.png" className="max-w-96" />
+<img src="/docs/v1/routedschematic.png" style={{ maxHeight: '300px'}} />
 (to get the GND symbol, press P and search for it!)
 
 Once all the components are connected, we can start assigning _footprints_ to the symbols we have here. Footprints are what gets physically drawn on the PCB. To do this, click the "run footprint assignment tool"
 in the top right.
-<img src="/docs/v1/footprintassign.png" style={{ maxWidth: '200px' }} />
+<img src="/docs/v1/footprintassign.png" style={{ maxHeight: '200px' }} />
 
 This should open up a window where you can assign different footprints to your components! Assign them based on the image below:
 <img src="/docs/v1/assignedfootprints.png" />
@@ -137,9 +133,9 @@ We just made a pretty cool macropad, but obviously there's a lot of cooler stuff
 The biggest tip I have for that is to simply look at other PCB designs and reverse engineer it from there. For example, my own macropad design is actually in the repository
 [here](https://github.com/hackclub/hackpad/tree/main/hackpads/orpheuspad)! It has:
 
--   2x neopixel/SK6812 MINI-E LEDs
--   1 0.91 128x32 OLED
--   1 rotary encoder/knob
--   4 switches (5 if you include the rotary encoder!) - this is done in a [matrix](https://docs.qmk.fm/how_a_matrix_works), so it's a good point to check!
+- 2x neopixel/SK6812 MINI-E LEDs
+- 1 0.91 128x32 OLED
+- 1 rotary encoder/knob
+- 4 switches (5 if you include the rotary encoder!) - this is done in a [matrix](https://docs.qmk.fm/how_a_matrix_works), so it's a good point to check!
 
 Everything is fully open source, so you can try and reverse engineer from there. This process applies to practically everything else

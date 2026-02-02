@@ -16,7 +16,8 @@ body {
 }
 
 .prose img {
-    @apply rounded-md shadow-lg ring-1 ring-slate-700/30 mx-4;
+    @apply rounded-md shadow-lg ring-1 ring-slate-700/30 h-auto mx-auto;
+    max-width: calc(100% - 2rem);
 }
 
 a {

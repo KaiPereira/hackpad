@@ -1,4 +1,5 @@
 import OrpheusFlag from "/OrpheusFlag.svg";
+import MobileNav from "../components/MobileNav";
 
 const DocPage = ({ Content, SideBar }: { Content: any; SideBar: any }) => {
     return (
@@ -34,6 +35,9 @@ const DocPage = ({ Content, SideBar }: { Content: any; SideBar: any }) => {
                     </h1>
                 </div>
             </header>
+            <div className="md:hidden fixed right-2 top-16 ">
+                <MobileNav />
+            </div>
 
             <div className="flex flex-1 pt-16">
                 <aside className="hidden sm:block w-48 fixed top-14 h-full">
@@ -41,8 +45,15 @@ const DocPage = ({ Content, SideBar }: { Content: any; SideBar: any }) => {
                 </aside>
 
                 {/* Main Content */}
-                <main className="flex-1 p-8 prose prose-sm xl:prose-base prose-ul:list-disc prose-ol:list-decimal prose-headings:my-2 prose-headings:font-semibold font-sans max-w-3xl mx-auto sm:ml-52">
+                <main className="flex-1 p-8 prose prose-sm xl:prose-base prose-ul:list-disc prose-ol:list-decimal prose-headings:my-2 prose-headings:font-semibold font-sans max-w-sm md:max-w-3xl mx-auto sm:ml-52">
                     <Content />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                 </main>
             </div>
         </div>
