@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 
-import SimpleTutorial from "./pages/hackpad/SimpleTutorial.md";
+import SimpleTutorial from "./pages/hackpad/SimpleTutorial.mdx";
 import Submission from "./pages/hackpad/Submission.mdx";
 import KitContents from "./pages/hackpad/KitContents.md";
 import Faq from "./pages/hackpad/Faq.mdx";
