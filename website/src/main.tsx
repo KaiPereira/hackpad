@@ -22,6 +22,8 @@ import SideBar from "./components/SideBar.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
+import Gallery from "./pages/Gallery";
+
 // IMPORT YOUR PROJECTS HERE
 import OrpheusPad from "./pages/submissions/Orpheuspad/OrpheusPad.mdx";
 import CyaoPad from "./pages/submissions/Cyaopad/CyaoPad.mdx";
@@ -31,6 +33,10 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
+    },
+    {
+        path: "/gallery",
+        element: <Gallery />,
     },
     {
         path: "/guide",

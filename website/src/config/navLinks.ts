@@ -10,4 +10,5 @@ export const navLinks: NavLink[] = [
     { href: "/parts", label: "Approved Parts / Kit Contents" },
     { href: "/submitting", label: "Submit your project!" },
     { href: "/faq", label: "FAQ" },
+    { href: "/gallery", label: "Gallery" },
 ];

@@ -6,6 +6,11 @@ import rehypeExternalLinks from "rehype-external-links";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    server: {
+        proxy: {
+            "/api": "http://localhost:3000",
+        },
+    },
     plugins: [
         // {enforce: 'pre', ...mdx({
         //   extensions: ['.mdx'],
