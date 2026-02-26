@@ -33,7 +33,7 @@ const Gallery = () => {
                     <p className="text-slate-600 mt-1">
                         Fill out{" "}
                         <a
-                            href="/https://forms.hackclub.com/hackpad-demo"
+                            href="https://forms.hackclub.com/hackpad-demo"
                             className="text-[#155e75] hover:underline"
                         >
                             this form
