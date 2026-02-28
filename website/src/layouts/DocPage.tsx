@@ -35,7 +35,7 @@ const DocPage = ({ Content, SideBar }: { Content: any; SideBar: any }) => {
                     </h1>
                 </div>
             </header>
-            <div className="md:hidden fixed right-2 top-16 ">
+            <div className="md:hidden fixed right-2 top-16 z-50">
                 <MobileNav />
             </div>
 
