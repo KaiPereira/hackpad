@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { navLinks } from "../config/navLinks";
 
 const SideBar = () => {
@@ -7,12 +8,12 @@ const SideBar = () => {
                 <ul>
                     {navLinks.map((link) => (
                         <li key={link.href}>
-                            <a
-                                href={link.href}
+                            <Link
+                                to={link.href}
                                 className="block py-2 px-4 rounded hover:bg-slate-200 transition-all text-slate-900 hover:text-cyan-800"
                             >
                                 {link.label}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

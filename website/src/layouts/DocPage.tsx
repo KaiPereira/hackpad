@@ -1,19 +1,22 @@
 import OrpheusFlag from "/OrpheusFlag.svg";
 import MobileNav from "../components/MobileNav";
+import TableOfContents from "../components/TableOfContents";
+import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const DocPage = ({ Content, SideBar }: { Content: any; SideBar: any }) => {
+const DocPage = ({ SideBar }: { SideBar: any }) => {
     return (
         <div className="flex flex-col min-h-screen">
             {/* Header */}
             <header className="bg-slate-100 text-white fixed top-0 z-10 w-full border-b-4 border-slate-500 border-dashed">
                 <div>
                     <h1 className="text-2xl font-bold font-mono flex justify-between ml-4">
-                        <a
-                            href="/"
+                        <Link
+                            to="/"
                             className="text-black bg-green-400 hover:bg-green-500 px-2 py-1 rounded-sm my-2"
                         >
                             HACKPAD
-                        </a>
+                        </Link>
                         <img
                             src={OrpheusFlag}
                             className="max-w-12 sm:max-w-24 hidden sm:right-20 sm:block absolute"
@@ -45,8 +48,10 @@ const DocPage = ({ Content, SideBar }: { Content: any; SideBar: any }) => {
                 </aside>
 
                 {/* Main Content */}
-                <main className="flex-1 p-8 prose prose-sm xl:prose-base prose-ul:list-disc prose-ol:list-decimal prose-headings:my-2 prose-headings:font-semibold font-sans max-w-sm md:max-w-3xl mx-auto sm:ml-52">
-                    <Content />
+                <main className="flex-1 p-8 prose prose-sm xl:prose-base prose-ul:list-disc prose-ol:list-decimal prose-headings:my-2 prose-headings:font-semibold font-sans max-w-sm md:max-w-3xl mx-auto sm:ml-56 xl:mr-56">
+                    <Outlet />
+                    <br />
+                    <br />
                     <br />
                     <br />
                     <br />
@@ -55,6 +60,10 @@ const DocPage = ({ Content, SideBar }: { Content: any; SideBar: any }) => {
                     <br />
                     <br />
                 </main>
+
+                <aside className="hidden xl:block w-56 fixed top-20 right-4 h-[calc(100vh-5rem)] overflow-y-auto p-4">
+                    <TableOfContents />
+                </aside>
             </div>
         </div>
     );

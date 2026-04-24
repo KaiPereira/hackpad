@@ -1,8 +1,17 @@
 const Footer = () => {
     return (
         <footer>
-            <div className="bg-slate-900 py-12 text-slate-600 text-center font-mono">
-                <p>made with ❤️ by @alexren // qcoral</p>
+            <div className="bg-slate-900 py-12 text-slate-500 text-center font-mono">
+                <p>
+                    made with ❤️ by{" "}
+                    <a
+                        href="https://dari.zone"
+                        target="_blank"
+                        className="text-cyan-600"
+                    >
+                        alex ren
+                    </a>
+                </p>
                 <p>
                     drop me a follow on{" "}
                     <a

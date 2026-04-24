@@ -8,7 +8,8 @@ const Gallery = () => {
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        fetch("/api/gallery")
+        const baseUrl = import.meta.env.VITE_GALLERY_API_BASE_URL ?? "";
+        fetch(`${baseUrl}/api/gallery`)
             .then((res) => {
                 if (!res.ok) throw new Error("Failed to fetch gallery");
                 return res.json();
@@ -38,7 +39,8 @@ const Gallery = () => {
                         >
                             this form
                         </a>{" "}
-                        to add your hackpad to the gallery!
+                        to add your hackpad to the gallery! You'll get a hackpad
+                        goodie bag :D
                     </p>
                 </div>
 

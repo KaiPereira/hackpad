@@ -16,9 +16,10 @@ All keyboards, macropads, and related consist of roughly 3 parts:
 
 The case, which provides a shell and physically holds all the pieces together
 
-The PCB, which electrically connects everything (and also helps hold things together)
+The PCB and its components, which electrically connects everything (and also helps hold things together)
 
 The firmware, which processes all the electrical signals and sends them as keystrokes to the computer!
+
 
 We'll go over how create each part, each with its own sub-parts:
 

@@ -20,6 +20,10 @@ body {
     max-width: calc(100% - 2rem);
 }
 
+.prose :is(h1, h2, h3, h4, h5, h6) {
+    scroll-margin-top: 7rem;
+}
+
 a {
     color: #155e75;
     /* text-decoration-line: underline; */
