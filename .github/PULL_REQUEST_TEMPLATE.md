@@ -1,4 +1,8 @@
-Hackpad submissions should no longer be done through PRs - instead, please submit to the current active program! For reference, this is what the old message used to look like:
+Hackpad submissions should no longer be done through PRs - instead, please submit to the current active program!
+
+If you have a genuine PR - welcome!
+
+For reference, this is what the old message used to look like:
 
 ```
 Ready to submit your project? Nice job! Hopefully you've read the [submission guidelines](https://hackpad.hackclub.com/submitting). **If not, make sure to read them first.**

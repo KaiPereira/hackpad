@@ -1,5 +1,3 @@
-# WIP
-
 # Assembling your macropad!
 
 Finally got your parts? Awesome! Here's what you need to do.
