@@ -6,11 +6,11 @@ The Orpheuspad example I designed has examples of every single one - I would als
 
 (gif)
 
-As with anything, make sure to ask in #hackpad if you ever have any questions!
+As with anything, make sure to ask in [#hackpad](https://hackclub.enterprise.slack.com/archives/C07LESGH0B0) if you ever have any questions!
 
 ## Silkscreen art!
 
-By default, PCBs are *really* boring!
+By default, PCBs are _really_ boring!
 
 ## 4+ keys / Matrix wiring
 
@@ -57,17 +57,20 @@ Notice the small notch/cut on the bottom right corner - your LEDs _will_ not wor
 OLED Displays are small screens that can display various pieces of info! Here's a cat animation I had earlier
 
 <video controls className="w-full max-w-full h-auto rounded">
-  <source src="https://cdn.hackclub.com/019c1b00-538c-7a58-a621-12ec0ac71655/pxl_20241115_191000789.mp4" type="video/mp4" />
-  Your browser does not support the video element.
+    <source
+        src="https://cdn.hackclub.com/019c1b00-538c-7a58-a621-12ec0ac71655/pxl_20241115_191000789.mp4"
+        type="video/mp4"
+    />
+    Your browser does not support the video element.
 </video>
 
 For footprint, you can actually just use a 4 pin header! This is because the module uses a standard 2.54mm 4 pin header, there's no fancy external footprint needed
 
-The most important thing to note is to make sure that you make sure the pin order is correct. Some pictures you'll see online will feature the 4 pins in different orientations, make sure it is GND-VCC-SCL-SDA. 
+The most important thing to note is to make sure that you make sure the pin order is correct. Some pictures you'll see online will feature the 4 pins in different orientations, make sure it is GND-VCC-SCL-SDA.
 
 ![picture of oled](/docs/v3/oled.png)
 
-*the actual OLED you'll get will have a blue PCB - this picture is just to illustrate the pinout*
+_the actual OLED you'll get will have a blue PCB - this picture is just to illustrate the pinout_
 
 Additionally, pull-up resistors are _not_ necessary! The microcontroller we're using is based on the [Raspberry Pi RP2040](https://www.raspberrypi.com/products/rp2040/), which has built-in pullup resistors on every pin - this means you don't need to manually add resistors.
 
